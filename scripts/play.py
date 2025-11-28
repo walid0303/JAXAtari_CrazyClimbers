@@ -102,7 +102,8 @@ def main():
             # 2a. Dynamically load the base game environment
             # We only need the 'game' object; it will have its own .renderer
             game_env, _ = load_game_environment(args.game)
-            
+
+
             # 2b. Apply mods if requested
             if args.mods:
                 print(f"Applying mods: {args.mods}")
